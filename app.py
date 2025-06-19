@@ -3,6 +3,7 @@ import joblib
 import pandas as pd
 import logging
 
+
 app = Flask(__name__)
 
 # Configurar el registro
