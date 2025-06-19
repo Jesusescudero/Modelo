@@ -3,11 +3,13 @@
 <head>
     <title>Clasificador de Insectos</title>
     <script>
+
         function clasificarInsecto(event) {
             event.preventDefault();
             const abdomen = document.getElementById("abdomen").value;
             const antena = document.getElementById("antena").value;
 
+            
             fetch("/predict", {
                 method: "POST",
                 headers: {
